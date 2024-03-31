@@ -1,0 +1,15 @@
+.navigation-header{
+    background-color:#690d85;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 15px;
+    
+
+}
+.navigation-header div{
+margin: 10px;
+border: 2px solid black;
+height: 20px;
+}
