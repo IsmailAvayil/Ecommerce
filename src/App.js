@@ -5,7 +5,7 @@ import CategoryList from "./components/CategoryList/CategoryList";
 import UserList from "./components/UsersList/UsersList";
 import Navigation from "./components/Navigation/Navigation";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import ProductsListByCategory from "./components/Products List By Category/ProductsListByCategory";
 
 function App() {
