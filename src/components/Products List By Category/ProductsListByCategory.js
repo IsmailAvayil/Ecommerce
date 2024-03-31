@@ -18,17 +18,17 @@ function ProductsListByCategory() {
       setProductsByCategory(response.data);
     };
     fetchProductsByCategory();
-  }, []);
+  }, [categoryId]);
   return (
     <div className="product-by-category-container">
       <h1>Products List By Category</h1>
       {productsByCategory.map((product) => (
-        <div className="product-by-category">
+        <div className="product-by-category" key={product.id}>
           {product.images && product.images.map((image, index) => (
             <img
               key={index}
               src={image}
-              alt={`Product ${product.id} Image ${index}`}
+              alt={`item ${product.id} photo ${index}`}
               style={{ maxWidth: "200px", maxHeight: "200px", margin: "5px" }}
             />
           ))}
