@@ -1,8 +1,8 @@
 import "./App.css";
-import ProductsList from "./components/ProductsList/ProductsList";
-import ProductDetails from "./components/ProductDetails/ProductDetails";
-import CategoryList from "./components/CategoryList/CategoryList";
-import UserList from "./components/UsersList/UsersList";
+import ProductsList from "./components/Products List/ProductsList";
+import ProductDetails from "./components/Product Details/ProductDetails";
+import CategoryList from "./components/Categories List/CategoryList";
+import UserList from "./components/Users List/UsersList";
 import Navigation from "./components/Navigation/Navigation";
 
 import { HashRouter as Router, Routes, Route } from "react-router-dom";

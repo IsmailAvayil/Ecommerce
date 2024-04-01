@@ -5,12 +5,13 @@ import { Link } from "react-router-dom";
 function Navigation() {
   return (
     <div className="navigation-header">
-      <div>
-        <Link to={`/categories`}>
-          <button>categoty List</button>
-        </Link>
+      <div className="header-logo">
+        <a>TABETAI</a>
       </div>
-      <div>
+      <div className="navigation-buttons">
+        <Link to={`/categories`}>
+          <button>Categories List</button>
+        </Link>
         <Link to={`/users`}>
           <button>Users List</button>
         </Link>

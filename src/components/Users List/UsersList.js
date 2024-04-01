@@ -17,18 +17,27 @@ const UserList = () => {
   useEffect(() => {
     fetchUsers();
   }, []);
+  if(!users){
+    return<div>Loading.....</div>
+  }
 
   return (
-    <div className="users-list">
+    <div className="component-users">
       <h1>Users List</h1>
+      <div className="users-list">
+      
       {users.map((user) => (
         <div className="users-container" key={user.id}>
           <h2>{user.name}</h2>
           <p>Email: {user.email}</p>
-          {user.avatar && <img src={user.avatar} alt={user.name} />}
+          <div className="image-container">{user.avatar && <img src={user.avatar} alt={user.name} />}</div>
+          
         </div>
       ))}
     </div>
+
+    </div>
+    
   );
 };
 
